@@ -1,0 +1,86 @@
+*** Settings ***
+Resource          ../../common/robotframe_keyword/resource_4.0.1.txt
+
+*** Test Cases ***
+AppStore2-935
+    [Documentation]    安装包扫描界面
+    [Tags]    4.0.1
+    ${result}=    apk_scanning_page.run
+    should be true    ${result}
+
+AppStore2-909
+    [Documentation]    管理界面验证
+    [Tags]    4.0.1
+    ${result}=    app_manage_page.run
+    should be true    ${result}
+
+AppStore2-922
+    [Documentation]    下载任务界面验证
+    [Tags]    4.0.1
+    ${result}=    appManage.run
+    should be true    ${result}
+
+AppStore2-989
+    [Documentation]    下载并查看广告位app
+    [Tags]    4.0.1
+    ${result}=    DownloadAdApp.run
+    should be true    ${result}
+
+AppStore2-924
+    [Documentation]    开启已经安装好的应用程序
+    [Tags]    4.0.1
+    ${result}=    installedAppOpen.run
+    should be true    ${result}
+
+AppStore2-933
+    [Documentation]    已安装界面验证
+    [Tags]    4.0.1
+    ${result}=    installedAppPage.run
+    should be true    ${result}
+
+AppStore2-1011
+    [Documentation]    打开已安装的程序
+    [Tags]    4.0.1
+    ${result}=    open_app_of_apklists.run
+    should be true    ${result}
+
+AppStore2-1009
+    [Documentation]    打开已安装程序
+    [Tags]    4.0.1
+    ${result}=    open_installed_app.run
+    should be true    ${result}
+
+AppStore2-931
+    [Documentation]    分享应用程序
+    [Tags]    4.0.1
+    ${result}=    share_app.run
+    should be true    ${result}
+
+AppStore2-1102
+    [Documentation]    启动搜索功能
+    [Tags]    4.0.1
+    ${result}=    start_search_from_apks.run
+    should be true    ${result}
+
+AppStore2-1103
+    [Documentation]    打开设置页面
+    [Tags]    4.0.1
+    ${result}=    start_set_from_apkslist.run
+    should be true    ${result}
+
+AppStore2-1068
+    [Documentation]    启动搜索功能
+    ${result}=    startSearchPage.run
+    should be true    ${result}
+
+AppStore2-1069
+    [Documentation]    打开设置页面
+    [Tags]    4.0.1
+    ${result}=    startSetPage.run
+    should be true    ${result}
+
+AppStore2-934
+    [Documentation]    卸载已安装程序
+    [Tags]    4.0.1
+    ${result}=    uninstalled_app.run
+    should be true    ${result}

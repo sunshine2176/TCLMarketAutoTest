@@ -1,0 +1,9 @@
+--include=4.2.5
+--outputdir=D:\autoTest\TCLMarketAutoTest\report
+--consolecolors=off
+--consolewidth=133
+--logtitle=TCLMarketAutoTest_4.2.5
+--reporttitle=TCLMarketAutoTest_4.2.5
+--tagstatinclude=4.2.5
+--tagstatinclude=hzp
+--pythonpath=D:\autoTest\python\TCLMarketAutoTest\libs

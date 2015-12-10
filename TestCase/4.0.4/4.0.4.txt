@@ -1,0 +1,32 @@
+*** Settings ***
+Force Tags        4.0.4
+Library           DownloadAds.py
+Library           EssentialPage.py
+Library           EssentialAppDetail.py
+
+*** Test Cases ***
+AppStore3-26
+    [Documentation]    点击banner，下载第一个app
+    [Tags]    zicheng
+    ${reslut}=    DownloadAds.run_checking_setting
+    should be true    ${reslut}
+
+AppStore3-1171
+    [Documentation]    必备页面验证，加载更多必备app
+    ${reslut}=    EssentialPage.run_checking_setting
+    should be true    ${reslut}
+
+AppStore3-1172
+    [Documentation]    必备页面验证，加载更多必备app
+    ${reslut}=    EssentialPage.run_checking_setting
+    should be true    ${reslut}
+
+AppStore3-1173
+    [Documentation]    查看必备app详情，下载必备app
+    ${reslut}=    EssentialAppDetail.run_checking_testing
+    should be true    ${reslut}
+
+AppStore3-1174
+    [Documentation]    查看必备app详情，下载必备app
+    ${reslut}=    EssentialAppDetail.run_checking_testing
+    should be true    ${reslut}

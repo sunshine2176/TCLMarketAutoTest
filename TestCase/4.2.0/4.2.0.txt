@@ -1,0 +1,76 @@
+*** Settings ***
+Force Tags        4.2.0    4.2.5
+Resource          ../../common/robotframe_keyword/resource_4.2.0.txt
+
+*** Test Cases ***
+AS4-891:设置界面验证
+    [Documentation]    AS4-891:设置界面验证
+    [Tags]    hzp    4.3.0    4.3.1    4.3.2    4.3.3
+    ${reslut}=    CheckSetting.Run Check Setting
+    should be true    ${reslut}
+
+AS4-1140:查看设置
+    [Documentation]    AS4-1140:查看设置
+    [Tags]    hzp    4.3.0    4.3.1    4.3.2    4.3.3
+    ${reslut}=    Viewseting.Run Test
+    should be true    ${reslut}
+
+AS4-895:问题反馈界面验证
+    [Tags]    hzp
+    ${a}=    checkfeedback
+    should be true    ${a}
+
+AS4-898:提交特殊字符为反馈信息
+    [Tags]    hzp
+    ${a}    feedbackspeciall
+    should be True    ${a}
+
+AS4-58:活动页面验证
+    [Tags]    hzp    4.3.0    4.3.1    4.3.2    4.3.3
+    ${a}=    checkactivity
+    should be true    ${a}
+
+AS4-1296:注销账户
+    [Tags]    hzp    4.3.0    4.3.1    4.3.2    4.3.3
+    ${a}=    checklogout
+    should be true    ${a}
+
+AS4-35:下载最热app
+    [Tags]    hzp    4.3.0    4.3.1    4.3.2    4.3.3
+    ${a}=    downloadhostestapp
+    should be true    ${a}
+
+AS4-977:搜索有效字符
+    [Tags]    hzp    4.3.0    4.3.1    4.3.2    4.3.3
+    ${a}=    effectivesearch
+    should be true    ${a}
+
+AS4-897:提交完整的反馈信息
+    [Tags]    hzp
+    ${a}=    feedbackcomplete
+    should be true    ${a}
+
+AS4-896:提交不完整的反馈信息
+    [Tags]    hzp
+    ${a}=    feedbackuncompleted
+    should be true    ${a}
+
+AS4-34:查看最热app详情
+    [Tags]    hzp    4.3.0    4.3.1    4.3.2    4.3.3
+    ${a}=    hotappdetial
+    should be true    ${a}
+
+AS4-1291:搜索输入框中删除按钮验证
+    [Tags]    hzp    4.3.0    4.3.1    4.3.2    4.3.3
+    ${a}=    searchboxdeleicon
+    should be true    ${a}
+
+AS4-977:搜索特殊字符
+    [Tags]    hzp    4.3.0    4.3.1    4.3.2    4.3.3
+    ${a}=    speciallcharsearch
+    should be true    ${a}
+
+AS4-1139:查看我的账户
+    [Tags]    hzp    4.3.0    4.3.1    4.3.2    4.3.3
+    ${a}=    viewmycount
+    should be true    ${a}

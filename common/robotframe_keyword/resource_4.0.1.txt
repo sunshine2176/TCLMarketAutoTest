@@ -1,0 +1,18 @@
+*** Settings ***
+Library           ../py_common_keyword/CommonFunctions.py
+Library           ../../TestCase/4.0.1/apk_scanning_page.py
+Library           ../../TestCase/4.0.1/app_manage_page.py
+Library           ../../TestCase/4.0.1/appManage.py
+Library           ../../TestCase/4.0.1/baseFunc.py
+Library           ../../TestCase/4.0.1/DownloadAdApp.py
+Library           ../../TestCase/4.0.1/installedAppOpen.py
+Library           ../../TestCase/4.0.1/installedAppPage.py
+Library           ../../TestCase/4.0.1/open_app_of_apklists.py
+Library           ../../TestCase/4.0.1/open_installed_app.py
+Library           ../../TestCase/4.0.1/share_app.py
+Library           ../../TestCase/4.0.1/startOperate.py
+Library           ../../TestCase/4.0.1/startSearchPage.py
+Library           ../../TestCase/4.0.1/startSetPage.py
+Library           ../../TestCase/4.0.1/start_search_from_apks.py
+Library           ../../TestCase/4.0.1/start_set_from_apkslist.py
+Library           ../../TestCase/4.0.1/uninstalled_app.py

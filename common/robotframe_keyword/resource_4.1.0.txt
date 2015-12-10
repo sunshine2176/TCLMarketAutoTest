@@ -1,0 +1,18 @@
+*** Settings ***
+Library           ../../TestCase/4.1.0/CheckDownloadadapp.py    WITH NAME    CheckDownloadadapp
+Library           ../../TestCase/4.1.0/CheckDownloadmustapp.py    WITH NAME    CheckDownloadmustapp
+Library           ../../TestCase/4.1.0/CheckMustappDetail.py    WITH NAME    CheckMustappDetail
+Library           ../../TestCase/4.1.0/CheckMustPage.py
+Library           ../../TestCase/4.1.0/LoadMustapp.py
+Library           ../../TestCase/4.1.0/HotpageVerify.py    WITH NAME    HotpageVerify
+Library           ../../TestCase/4.1.0/loadHotapps.py    WITH NAME    loadHotapps
+Library           ../../TestCase/4.1.0/loadApp.py    WITH NAME    loadApp
+Library           ../../TestCase/4.1.0/SearchpageVerify.py    WITH NAME    SearchpageVerify
+Library           ../../TestCase/4.1.0/hoursSearch48.py
+Library           ../../TestCase/4.1.0/readSearchchatsapp.py    WITH NAME    readSearchchatsapp
+Library           ../../TestCase/4.1.0/favoritesApp.py    WITH NAME    favoritesApp
+Library           ../../TestCase/4.1.0/searchIndetail.py    WITH NAME    searchIndetail
+Library           ../../TestCase/4.1.0/commentpageVerify.py    WITH NAME    commentpageVerify
+Library           ../../TestCase/4.1.0/writecoment.py
+Library           ../../TestCase/4.1.0/versionVerify.py
+Library           ../../TestCase/4.1.0/onekey_report.py

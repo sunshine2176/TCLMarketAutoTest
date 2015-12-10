@@ -1,0 +1,89 @@
+*** Settings ***
+Force Tags        4.1.0    4.1.1
+Resource          ../../common/robotframe_keyword/resource_4.1.0.txt
+
+*** Test Cases ***
+AppStore3-26
+    [Documentation]    下载并查看广告位app
+    ${reslut}=    CheckDownloadadapp.Check Download Ad App
+    should be true    ${reslut}
+
+AppStore3-1171
+    [Documentation]    必备页面验证
+    ${reslut}=    CheckMustPage.Check Mustpage
+    should be true    ${reslut}
+
+AppStore3-1172
+    [Documentation]    加载更多必备app
+    ${reslut}=    LoadMustapp.Load Must App
+    should be true    ${reslut}
+
+AppStore3-1173
+    [Documentation]    查看必备app详情
+    ${reslut}=    CheckMustappDetail.Check Mustapp Detail
+    should be true    ${reslut}
+
+AppStore3-1174
+    [Documentation]    下载必备app
+    ${reslut}=    CheckDownloadmustapp.Download Must App
+    should be true    ${reslut}
+
+AS4-32
+    [Documentation]    最热页面验证HotpageVerify
+    ${reslut}=    HotpageVerify .Run HotpageVerify
+    should be true    ${reslut}
+
+AS4-33
+    [Documentation]    加载最多最热app \ \ \ \ \ \ loadHotapps
+    ${reslut}=    loadHotapps.Run LoadHotapps
+    should be true    ${reslut}
+
+AS4-20
+    [Documentation]    加载最多推荐app loadApp
+    ${reslut}=    loadApp.Run LoadApp
+    should be true    ${reslut}
+
+AS4-1670
+    [Documentation]    搜索页面验证 \ SearchpageVerify
+    ${reslut}=    Run SearchpageVerify
+    should be true    ${reslut}
+
+AS4-1671
+    [Documentation]    下载48小时热搜app 48hoursSearch
+    ${reslut}=    Run HoursSearch48
+    should be true    ${reslut}
+
+AS4-1672
+    [Documentation]    查看搜索排行榜上app \ read_searchchatapp
+    ${reslut}=    Run ReadSearchchatsapp
+    should be true    ${reslut}
+
+AS4-1688
+    [Documentation]    收藏应用程序 favoritesApp
+    ${reslut}=    favoritesApp.Run FavoritesApp
+    should be true    ${reslut}
+
+AS4-1689
+    [Documentation]    搜索按钮验证 searchIndetail-1
+    ${reslut}=    searchIndetail.Run SearchIndetail
+    should be true    ${reslut}
+
+AS4-1690
+    [Documentation]    评分页面验证
+    ${reslut}=    commentpageVerify.Run CommentpafeVerify
+    should be true    ${reslut}
+
+AS4-1691
+    [Documentation]    撰写评论验证
+    ${reslut}=    writecoment.run writecoment
+    should be true    ${reslut}
+
+AS4-1693
+    [Documentation]    版本信息验证
+    ${reslut}=    versionVerify.Run VersionVerify
+    should be true    ${reslut}
+
+AS4-1694
+    [Documentation]    一键举报页面验证
+    ${reslut}=    onekey_report.Run Onekey Report
+    should be true    ${reslut}
